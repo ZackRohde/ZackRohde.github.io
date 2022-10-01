@@ -2,8 +2,10 @@
 
 welcomeToMyPortfolio. welcome_to_my_portfolio. WelcomeToMyPortfolio.
 
-(Yes, I know 3 programming languages)
+My Name Is Zack Rohde. 
 
-As a full stack developer I want to share my journey, my projects, and my contact information with you.
+I Am A Full Stack Developer.
 
-Thank you for stopping by! 
+Marine Corps Infantry Veteran. 
+
+Here To Share My Journey, My Projects, And My Contact Information.
