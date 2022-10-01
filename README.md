@@ -1,2 +1,9 @@
 # ZackRohde.github.io
-Welcome To My Portfolio. You'll learn about me, the journey that has taken to me here, the projects I have done, and my contact information. Thank you for stopping by!
+
+welcomeToMyPortfolio. welcome_to_my_portfolio. WelcomeToMyPortfolio.
+
+(Yes, I know 3 programming languages)
+
+As a software developer I want to share my journey, my projects, and my contact information with you.
+
+Thank you for stopping by! 
