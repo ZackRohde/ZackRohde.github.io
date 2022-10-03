@@ -4,7 +4,7 @@
   border: 0;
 }
 
-.mar_bot_s {
+.herotext {
   margin-bottom: 50px;
 }
 
@@ -16,21 +16,38 @@
 .navbox {
   display: flex;
   justify-content: space-between;
+  color: black;
 }
 
 .herobox {
-  background-image: url(https://images.unsplash.com/photo-1664199134378-459f80ded70c?ixlib=rb-1.2.1&ixid=MwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=916&q=80);
+  /* Tree Background */
+  /* background-image: url(https://images.unsplash.com/photo-1664199134378-459f80ded70c?ixlib=rb-1.2.1&ixid=MwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=916&q=80); */
+  /* Wolf Background */
+  /* background-image: url(https://images.unsplash.com/photo-1511561415413-c643d4969838?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80;); */
+  /* Water Background */
+  /* background-image: url(https://images.unsplash.com/photo-1662473203558-58197a98bce2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); */
+  /* Chicago Background */
+  /* background-image: url(https://images.unsplash.com/photo-1596250410216-1ac77dc208e3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80); */
+  /* Grey BackGround */
+  background-image: url(https://images.unsplash.com/photo-1549396563-73701bbb8f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80);
   background-repeat: no-repeat;
-  width: 100vw;
-  height: 600px;
   background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
 }
 
 .ZR {
   padding: 0;
   margin: 0;
+  color: black;
 }
 
 h1 {
   text-align: center;
+  color: black;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
