@@ -1,2 +1,15 @@
-# ZackRohde.github.io
-Welcome To My Portfolio. You'll learn about me, the journey that has taken to me here, the projects I have done, and my contact information. Thank you for stopping by!
+Welcome.
+
+My Name Is Zack Rohde.
+
+          &&
+
+I Am A Full Stack Developer.
+
+          &&
+
+Marine Corps Infantry Veteran. 
+
+          &&
+
+I'm Here To Share My Journey, My Projects, And My Contact Information.
