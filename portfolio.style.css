@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+
 .herotext {
   margin-bottom: 50px;
 }
@@ -32,6 +39,7 @@
 h1 {
   text-align: center;
   color: black;
+  line-height: 50px;
 }
 
 .downarrow {
