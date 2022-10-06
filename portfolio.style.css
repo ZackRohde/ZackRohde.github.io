@@ -33,3 +33,9 @@ h1 {
   text-align: center;
   color: black;
 }
+
+.downarrow {
+  text-align: center;
+  position: relative;
+  line-height: 100px;
+}
