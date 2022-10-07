@@ -21,6 +21,10 @@
   background-color: transparent;
 }
 
+button.fa.fa-3x.fa-bars {
+  background: none;
+}
+
 .herobox {
   background-image: url(https://images.unsplash.com/photo-1549396563-73701bbb8f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80);
   background-repeat: no-repeat;
@@ -49,6 +53,10 @@
   position: relative;
   line-height: 50vh;
   background-color: transparent;
+}
+
+button.fa.fa-3x.fa-angles-down {
+  background: none;
 }
 
 .aboutme {
