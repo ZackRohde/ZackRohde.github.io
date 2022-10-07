@@ -18,6 +18,7 @@
   display: flex;
   justify-content: space-between;
   color: black;
+  background-color: transparent;
 }
 
 .herobox {
@@ -36,14 +37,35 @@
   color: black;
 }
 
-h1 {
+.herotext {
   text-align: center;
   color: black;
-  line-height: 50px;
+  line-height: 5vh;
+  margin-top: 6rem;
 }
 
 .downarrow {
   text-align: center;
   position: relative;
-  line-height: 100px;
+  line-height: 50vh;
+  background-color: transparent;
+}
+
+.aboutme {
+  text-align: center;
+  background-image: url(https://images.unsplash.com/photo-1549396563-73701bbb8f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+}
+
+.projects {
+  text-align: center;
+}
+
+.contactme {
+  text-align: center;
 }
