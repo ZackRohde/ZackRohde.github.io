@@ -1,9 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
+body {
+  background-image: url(https://images.unsplash.com/photo-1549396563-73701bbb8f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80);
 }
-
 
 .herotext {
   margin-bottom: 50px;
@@ -19,6 +16,7 @@
   justify-content: space-between;
   color: black;
   background-color: transparent;
+  padding: 10px;
 }
 
 button.fa.fa-3x.fa-bars {
@@ -26,18 +24,13 @@ button.fa.fa-3x.fa-bars {
 }
 
 .herobox {
-  background-image: url(https://images.unsplash.com/photo-1549396563-73701bbb8f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
 }
 
 .ZR {
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 0px;
   color: black;
 }
 
@@ -45,7 +38,7 @@ button.fa.fa-3x.fa-bars {
   text-align: center;
   color: black;
   line-height: 5vh;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .downarrow {
@@ -61,11 +54,6 @@ button.fa.fa-3x.fa-angles-down {
 
 .aboutme {
   text-align: center;
-  background-image: url(https://images.unsplash.com/photo-1549396563-73701bbb8f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   width: 100vw;
   height: 100vh;
 }
