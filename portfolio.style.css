@@ -333,6 +333,17 @@ body1 {
   background-image: url(https://userscontent2.emaze.com/images/f9538183-0ff9-478f-b964-c8ab90421e3b/3d28e192fda5c17250f96a2779c84475.jpg);
 }
 
+.front-2 {
+  z-index: 2;
+  background-size: 100vh;
+  background-size: cover;
+  background-image: url(./photos/pig-latin.png);
+}
+
+.content2 {
+  text-shadow: 2px 2px #000;
+}
+
 .contactme {
   text-align: center;
 }
