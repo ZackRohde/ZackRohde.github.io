@@ -42,7 +42,7 @@
       <!-- HOME PAGE HEADERS -->
       <h1 class="herotext"> Hello. </h1>
       <h1 class="herotext"> My Name Is Zack Rohde. </h1>
-      <h1 class="herotext"> USMC Veteran ---> Software Developer.</h1>
+      <h1 class="herotext"> USMC Veteran ---> Full Stack Developer.</h1>
       <img src="photos/headshot1.png" alt="Headshot of me!" class="headshot">
       <!-- DOWN ARROW BUTTON  -->
       <div class="downarrow">
@@ -172,19 +172,24 @@
           </div>
         </div>
 
-
         <!-- START OF CONTACT ME -->
         <div class="contactme">
           <h1> Contact Me </h1>
           <!-- START OF FORM -->
-
+          <div class="container3">
+            <form action="action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your First Name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="What's On Your Mind.." style="height:125px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
         </div>
       </div>
-
-      <br>
-
     </div>
-
     <!-- END OF BODY -->
 </body>
 
