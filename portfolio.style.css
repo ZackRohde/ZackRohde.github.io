@@ -203,6 +203,57 @@ body {
   }
 }
 
+/* START PROJECT ICONS */
+
+.js-logo {
+  width: 100px;
+  height: 100px;
+  padding-right: 10px;
+}
+
+.html-logo {
+  width: 115px;
+  height: 100px;
+}
+
+.css-logo {
+  width: 110px;
+  height: 100px;
+}
+
+.react-logo {
+  width: 100px;
+  height: 100px;
+  padding: 10;
+}
+
+.ruby-logo {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.rails-logo {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.postgresql-logo {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.git-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.github-logo {
+  width: 100px;
+  height: 100px;
+}
 
 /* START OF PROJECT CARD */
 
@@ -325,4 +376,19 @@ input[type=submit] {
   border-radius: 5px;
   background-color: white;
   padding: 20px;
+}
+
+.linkedin-logo {
+  width: 100px;
+  height 100px;
+  margin-top: 35px;
+}
+
+button.fa.fa-3x.fa-angles-up {
+  background: none;
+  margin-top: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
