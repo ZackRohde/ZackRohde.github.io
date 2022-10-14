@@ -19,6 +19,29 @@ body {
   padding: 10px;
 }
 
+/* MENU BAR */
+
+/* Style the navigation menu */
+.menu {
+  display: flex;
+  flex-direction: column-reverse !important;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.menu #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.menu a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+}
+
 button.fa.fa-3x.fa-bars {
   background: none;
 }
@@ -40,6 +63,8 @@ button.fa.fa-3x.fa-bars {
   line-height: 4px;
   margin-top: 2px;
 }
+
+.absoultehero {}
 
 .downarrow {
   text-align: center;
@@ -295,22 +320,22 @@ body1 {
   text-align: center;
   width: 100%;
   height: 100%;
-  padding: 100px;
-  color: #fff;
+  padding: 50px;
+  color: black;
   border-radius: 20px;
 }
 
 .content2 {
   transform: translatez(70px) scale(0.8);
-  line-height: 1.5em;
+  padding-bottom: 4em;
 }
 
 .content2 h1 {
   position: relative;
+  margin: auto;
 }
 
 .content2 p {
-  margin-top: 50px;
   line-height: 2em;
 }
 
@@ -330,7 +355,8 @@ body1 {
   z-index: 2;
   background-size: 100vh;
   background-size: cover;
-  background-image: url(./photos/pig-latin.png);
+  background-color: pink;
+  /* background-image: url(./photos/pig-latin.png); */
 }
 
 .front-2 {
@@ -338,7 +364,7 @@ body1 {
   background-size: 100vh;
   background-size: cover;
   /* background-image: url(); */
-  background-color: aqua;
+  background-color: gold;
 }
 
 .front-3 {
@@ -346,11 +372,7 @@ body1 {
   background-size: 100vh;
   background-size: cover;
   /* background-image: url(); */
-  background-color: aqua;
-}
-
-.content2 {
-  text-shadow: 2px 2px #000;
+  background-color: green;
 }
 
 .contactme {
@@ -400,7 +422,7 @@ input[type=submit] {
 
 .linkedin-logo {
   width: 100px;
-  height 100px;
+  height: 100px;
   margin-top: 35px;
 }
 
