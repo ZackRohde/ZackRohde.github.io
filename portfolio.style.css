@@ -1,15 +1,12 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
+body {
+  background-image: url(https://images.unsplash.com/photo-1549396563-73701bbb8f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80);
 }
-
 
 .herotext {
   margin-bottom: 50px;
 }
 
-.container {
+.bigcontainer {
   display: flex;
   flex-direction: column;
 }
@@ -19,6 +16,30 @@
   justify-content: space-between;
   color: black;
   background-color: transparent;
+  padding: 10px;
+}
+
+/* MENU BAR */
+
+/* Style the navigation menu */
+.menu {
+  display: flex;
+  flex-direction: column-reverse !important;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.menu #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.menu a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
 }
 
 button.fa.fa-3x.fa-bars {
@@ -26,33 +47,30 @@ button.fa.fa-3x.fa-bars {
 }
 
 .herobox {
-  background-image: url(https://images.unsplash.com/photo-1549396563-73701bbb8f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
   width: 100vw;
-  height: 100vh;
+  height: 50;
 }
 
 .ZR {
-  padding: 0;
-  margin: 0;
+  padding: 10px;
+  margin: 0px;
   color: black;
 }
 
 .herotext {
   text-align: center;
   color: black;
-  line-height: 5vh;
-  margin-top: 6rem;
+  line-height: 4px;
+  margin-top: 2px;
 }
+
+.absoultehero {}
 
 .downarrow {
   text-align: center;
   position: relative;
-  line-height: 50vh;
   background-color: transparent;
+  padding: 60px;
 }
 
 button.fa.fa-3x.fa-angles-down {
@@ -61,19 +79,358 @@ button.fa.fa-3x.fa-angles-down {
 
 .aboutme {
   text-align: center;
-  background-image: url(https://images.unsplash.com/photo-1549396563-73701bbb8f20?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2500&q=80);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  width: 100vw;
-  height: 100vh;
+  width: auto;
+  height: auto;
 }
 
-.projects {
+.headshot {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+}
+
+/* ABOUT ME STARTS */
+* {
+  box-sizing: border-box;
+}
+
+/* Set a background color */
+body {
+  background-color: #474e5d;
+  font-family: Helvetica, sans-serif;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #050404;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after,
+  .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/* START PROJECT ICONS */
+
+.js-logo {
+  width: 100px;
+  height: 100px;
+  padding-right: 10px;
+}
+
+.html-logo {
+  width: 115px;
+  height: 100px;
+}
+
+.css-logo {
+  width: 110px;
+  height: 100px;
+}
+
+.react-logo {
+  width: 100px;
+  height: 100px;
+  padding: 10;
+}
+
+.ruby-logo {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.rails-logo {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.postgresql-logo {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+
+.git-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.github-logo {
+  width: 100px;
+  height: 100px;
+}
+
+/* START OF PROJECT CARD */
+
+body1 {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative;
+  background-color: #111;
+  font-family: "Montserrat";
+}
+
+.container2 {
+  min-width: 700px;
+  min-height: 350px;
+  border-radius: 20px;
+  position: relative;
+  margin: 40px;
+  padding: auto;
+}
+
+.side {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
   text-align: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: black;
+  border-radius: 20px;
+}
+
+.content2 {
+  transform: translatez(70px) scale(0.8);
+  padding-bottom: 4em;
+}
+
+.content2 h1 {
+  position: relative;
+  margin: auto;
+}
+
+.content2 p {
+  line-height: 2em;
+}
+
+/* GREY LINE */
+.content2 h1:before {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  height: 3px;
+  background-color: grey;
+  width: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.front-1 {
+  z-index: 2;
+  background-size: 100vh;
+  background-size: cover;
+  background-color: pink;
+  /* background-image: url(./photos/pig-latin.png); */
+}
+
+.front-2 {
+  z-index: 2;
+  background-size: 100vh;
+  background-size: cover;
+  /* background-image: url(); */
+  background-color: gold;
+}
+
+.front-3 {
+  z-index: 2;
+  background-size: 100vh;
+  background-size: cover;
+  /* background-image: url(); */
+  background-color: green;
 }
 
 .contactme {
   text-align: center;
+}
+
+/* START OF CONTACT FORM */
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 10px;
+  /* Some padding */
+  border: 5px solid rgb(0, 0, 0);
+  /* Gray border */
+  border-radius: 20px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+  background-color: grey;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color and some padding around the form */
+.container3 {
+  border-radius: 5px;
+  background-color: white;
+  padding: 20px;
+}
+
+.linkedin-logo {
+  width: 100px;
+  height: 100px;
+  margin-top: 35px;
+}
+
+button.fa.fa-3x.fa-angles-up {
+  background: none;
+  margin-top: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
 }

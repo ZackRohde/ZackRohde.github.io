@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="title">
+
+<!-- START OF HEAD -->
 
 <head>
+  <!-- TAB TITLE -->
   <title> Zack Rohde's Portfolio </title>
+
+  <!-- LINKING HTML & CSS -->
   <link rel='stylesheet' href='portfolio.style.css'>
+
+  <!-- HAMBURGER MENU BAR ICON -->
   <script src="https://kit.fontawesome.com/d27f1e10b0.js" crossorigin="anonymous"></script>
   <style>
     .menu {
@@ -14,47 +21,226 @@
     }
   </style>
 </head>
+<!-- END OF HEAD -->
+
+<!-- HOME PAGE -->
+<!-- START OF BODY -->
 
 <body>
-  <div class="container">
+  <!-- BIG CONTAINER, HEROBOX, & NAVBOX CLASS -->
+  <div class="bigcontainer">
     <div class="herobox">
       <div class="navbox">
+        <!-- LEFT CORNER INITIALS -->
         <h2 class="ZR"> ZR </h2>
+        <!-- HAMBURGER MENU BAR BUTTON -->
         <div class="menu">
-          <button i class="fa fa-3x fa-bars"></i></button>
+          <div id="myLinks">
+            <a href="#aboutme">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#contactme">Contact Me</a>
+            <a href="#contactme">Resume</a>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <button i class="fa fa-3x fa-bars"></i></button></a>
         </div>
       </div>
-      <h1 class="herotext"> Hello. </h1>
-      <h1 class="herotext"> My Name Is Zack Rohde. </h1>
-      <h1 class="herotext"> USMC Veteran => Software Developer.</h1>
-      <div class="downarrow">
-        <button i class="fa fa-3x fa-angles-down"></i></button>
+
+      <!-- HOME PAGE HEADERS -->
+      <div class="absoultehero">
+        <h1 class="herotext"> Hello. </h1>
+        <h1 class="herotext"> My Name Is Zack Rohde. </h1>
+        <h1 class="herotext"> USMC Veteran ---> Full Stack Developer.</h1>
+        <img src="photos/headshot1.png" alt="Headshot of me!" class="headshot">
+        <!-- DOWN ARROW BUTTON  -->
+        <div class="downarrow">
+          <a href="#aboutme"><button i class="fa fa-3x fa-angles-down"></i></button></a>
+        </div>
       </div>
     </div>
 
-    <div class="aboutme">
+    <!-- START OF ABOUT ME SECTION -->
+    <div class="aboutme" id="aboutme">
       <h1> About Me </h1>
-      <img
-        src="https://attachment.outlook.live.net/owa/MSA%3Azdrohde%40outlook.com/service.svc/s/GetAttachmentThumbnail?id=AQMkADAwATMwMAItZDY3My0xNjkxLTAwAi0wMAoARgAAAy96%2F4xCefJGnjFHN98MzFsHAE7iaXX7xA5Dj6xsqtR1xQMAAAIBDAAAANdVTyvIubtFppis%2BALM7NIABPgmK%2F0AAAABEgAQAKJIkyGZvVJLmc1vIesoIoE%3D&thumbnailType=2&isc=1&token=eyJhbGciOiJSUzI1NiIsImtpZCI6IkQ4OThGN0RDMjk2ODQ1MDk1RUUwREZGQ0MzODBBOTM5NjUwNDNFNjQiLCJ0eXAiOiJKV1QiLCJ4NXQiOiIySmozM0Nsb1JRbGU0Tl84dzRDcE9XVUVQbVEifQ.eyJvcmlnaW4iOiJodHRwczovL291dGxvb2subGl2ZS5jb20iLCJ1YyI6IjhjODFhYTA4ZjY1ZTRiMjRiZDE3MDYzNmFhNTc0ZDNmIiwidmVyIjoiRXhjaGFuZ2UuQ2FsbGJhY2suVjEiLCJhcHBjdHhzZW5kZXIiOiJPd2FEb3dubG9hZEA4NGRmOWU3Zi1lOWY2LTQwYWYtYjQzNS1hYWFhYWFhYWFhYWEiLCJpc3NyaW5nIjoiU0lQIiwiYXBwY3R4Ijoie1wibXNleGNocHJvdFwiOlwib3dhXCIsXCJwdWlkXCI6XCI4NDQ0Mjg1Mjc5OTg2MDlcIixcInNjb3BlXCI6XCJPd2FEb3dubG9hZFwiLFwib2lkXCI6XCIwMDAzMDAwMC1kNjczLTE2OTEtMDAwMC0wMDAwMDAwMDAwMDBcIixcInByaW1hcnlzaWRcIjpcIlMtMS0yODI3LTE5NjYwOC0zNTk3ODY2NjQxXCJ9IiwibmJmIjoxNjY1MDk5ODE3LCJleHAiOjE2NjUxMDA0MTcsImlzcyI6IjAwMDAwMDAyLTAwMDAtMGZmMS1jZTAwLTAwMDAwMDAwMDAwMEA4NGRmOWU3Zi1lOWY2LTQwYWYtYjQzNS1hYWFhYWFhYWFhYWEiLCJhdWQiOiIwMDAwMDAwMi0wMDAwLTBmZjEtY2UwMC0wMDAwMDAwMDAwMDAvYXR0YWNobWVudC5vdXRsb29rLmxpdmUubmV0QDg0ZGY5ZTdmLWU5ZjYtNDBhZi1iNDM1LWFhYWFhYWFhYWFhYSIsImhhcHAiOiJvd2EifQ.cuEfzk2wRk-Vs8DHDQr-GXHxT6jstfo1iCdAWoXbva9ZDWVe4x4hsVg5rLIzNXf8sg7zSBgcg-TO7OUd77A1WrRrunLrp2SCWu0l13n2-KFLrKoTz-R-PpADq9YiPc16MrhBFwx1t8b-3ZM4EjUAjSyH5M0nmspz7vKaJf0x329jcXm4cF9sc_z7U-tL4_WgwXY7IsmT3FfVRkv25xqH_ESSqvaWJkE694h_E3k-e9bDwou-QZ4-7VXz7pRnqQJ3F5iZXjD9aaT7Zc4PGfTY6q72yYwQeJG0rmHf1k81Yzmh_eoZryOvdIdudMq6YocfFQJILR3Z-SO61CSj2OE8OQ&X-OWA-CANARY=1ICatB64HkOAPAkinp1JFXAGZMn0p9oYaTp8XhR4pEsrbStYMjgQF3mpFl_UyM7-4MLlRp28e6o.&owa=outlook.live.com&scriptVer=20220923004.15&animation=true"
-        alt="Photo of myself in the Marine Corps." width="450" height="400" />
+      <!-- START OF TIMELINE - ABOUT ME SECTION -->
+      <div class="timeline">
+        <!-- LEFT 1 -->
+        <div class="container left">
+          <div class="content">
+            <h2> 2012 </h2>
+            <p> Graduated from Waubonsie Valley High School. </p>
+          </div>
+        </div>
+        <!-- RIGHT 1 -->
+        <div class="container right">
+          <div class="content">
+            <h2> 2013 </h2>
+            <p> Enlisted in the Marine Corps Infantry. </p>
+          </div>
+        </div>
+        <!-- LEFT 2 -->
+        <div class="container left">
+          <div class="content">
+            <h2> 2014 </h2>
+            <p> 1st deployment, Darwin Australia. </p>
+          </div>
+        </div>
+        <!-- RIGHT 2 -->
+        <div class="container right">
+          <div class="content">
+            <h2> 2015 </h2>
+            <p> 2nd deployment, 31st MEU (Marine Expeditionary Unit). </p>
+          </div>
+        </div>
+        <!-- LEFT 3 -->
+        <div class="container left">
+          <div class="content">
+            <h2> 2016 </h2>
+            <p> An opportunity arose and I left my unit to join PMO (Provost Marshalls Office, Military Police) for 7
+              months before I got out of the military.
+            </p>
+          </div>
+        </div>
+        <!-- RIGHT 3 -->
+        <div class="container right">
+          <div class="content">
+            <h2> 2017 </h2>
+            <p> Exited the Marine Corps and started my Bachelors Degree in Management at National University.
+            </p>
+          </div>
+        </div>
+        <div class="timeline">
+          <!-- LEFT 4 -->
+          <div class="container left">
+            <div class="content">
+              <h2> 2018 </h2>
+              <p> Started working at Eos Fitness as a front desk associate to be promoted 4 moths later to Operations
+                Manager.
+              </p>
+            </div>
+          </div>
+          <!-- RIGHT 4 -->
+          <div class="container right">
+            <div class="content">
+              <h2> 2020 </h2>
+              <p> March 2020 the world shuts down due to the COVID-19 pandemic and I lost my position.
+              </p>
+            </div>
+          </div>
+          <!-- LEFT 5 -->
+          <div class="container left">
+            <div class="content">
+              <h2> 2021 </h2>
+              <p> Became a MLO (Mortgage Loan Originator) at Aligned Mortgage helping veterans use their VA Home Loan
+                Benefit. Graduated from National Unversity with my Bachleors Degree in Management in Novemeber 2021.
+              </p>
+            </div>
+          </div>
+          <!-- RIGHT 5 -->
+          <div class="container right">
+            <div class="content">
+              <h2> 2022 </h2>
+              <p> Aligned Mortgage SD closes its doors due to the market and I begin my journey in software development.
+              </p>
+            </div>
+          </div>
+          <!-- LEFT 6 -->
+          <div class="container left">
+            <div class="content">
+              <h2> 2022 - 2023</h2>
+              <p> I attended Learn Academy Coding Bootcamp to become a software developer. Expected graduation date Jan
+                13th, 2023.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- START OF PROJECTS -->
+      <div class="projects">
+        <h1> Projects </h1>
+        <br>
+        <h2> Skills I've Learned! </h2>
+        <img src="photos/js.png" alt="JavaScript logo" class="js-logo">
+        <img src="photos/html.png" alt="HTML logo" class="html-logo">
+        <img src="photos/css.png" alt="CSS logo" class="css-logo">
+        <img src="photos/react.png" alt="React logo" class="react-logo">
+        <img src="photos/ruby.png" alt="Ruby Logo" class="ruby-logo">
+        <img src="photos/rails.png" alt="Ruby on Rails Logo" class="rails-logo">
+        <img src="photos/postgre.png" alt="Postgresql Logo" class="postgresql-logo">
+        <img src="photos/git.png" alt="Git Logo" class="git-logo">
+        <img src="photos/github.png" alt="GitHub Logo" class="github-logo">
+        <!-- PROJECT CARD 1 -->
+        <div class="container2">
+          <div class="front-1 side">
+            <div class="content2">
+              <h1> Pig Latin Translator </h1>
+              <br>
+              <h2> This app you can input a word or sentence and it will return the word or sentence in Pig Latin! </h2>
+              <br>
+              <h2> Languages Used.. </h2>
+              <h3> JavaScript, HTML, and CSS </h3>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT CARD 2 -->
+        <div class="container2">
+          <div class="front-2 side">
+            <div class="content2">
+              <h1> Treasure Hunt</h1>
+              <br>
+              <h2> This game you will have just a few tries in order to find the treasure. If you hit the bomb.. You're
+                dead. Start over! </h2>
+              <br>
+              <h2> Languages Used.. </h2>
+              <h3> React, HTML, CSS </h3>
+            </div>
+          </div>
+        </div>
+        <!-- PROJECT CARD 3 -->
+        <div class="container2">
+          <div class="front-3 side">
+            <div class="content2">
+              <h1> Text Based Game</h1>
+              <br>
+              <h2> This game will take you on a short quest where you are golfing at Torrey Pines South Course!</h2>
+              <br>
+              <h2> Languages Used.. </h2>
+              <h3> Ruby </h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- START OF CONTACT ME -->
+        <div class="contactme">
+          <h1> Contact Me </h1>
+          <!-- START OF FORM -->
+          <div class="container3">
+            <form action="action_page.php">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your First Name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your Last Name..">
+              <label for="subject">Message</label>
+              <textarea id="subject" name="subject" placeholder="What's On Your Mind.." style="height:125px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+        <!-- GITHUB AND LINKEDIN LOGO & LINKS TO WEBSITES -->
+        <a href="https://github.com/ZackRohde"><img src="photos/github.png" alt="GitHub Logo" class="github-logo"></a>
+        <a href="https://www.linkedin.com/in/zacheryrohde/"><img src="photos/linkedin.png" alt="Linkedin Logo"
+            class="linkedin-logo"></a>
+
+      </div>
+      <div>
+        <div class="upArrow">
+          <a href="#top"><button i class="fa fa-3x fa-angles-up"></i></button></a>
+        </div>
+      </div>
     </div>
-
-    <div class="projects">
-      <h1> Projects </h1>
-    </div>
-
-    <br>
-
-    <div class="contactme">
-      <h1> Contact Me </h1>
-    </div>
-
-    <br>
-
-  </div>
-
+    <script src="portfolio.js"></script>
+    <!-- END OF BODY -->
 </body>
-
-<footer> </footer>
 
 </html>
