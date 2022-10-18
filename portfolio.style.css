@@ -64,8 +64,6 @@ button.fa.fa-3x.fa-bars {
   margin-top: 2px;
 }
 
-.absoultehero {}
-
 .downarrow {
   text-align: center;
   position: relative;
@@ -282,101 +280,94 @@ body {
 
 /* START OF PROJECT CARD */
 
-body1 {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-perspective: 1000px;
-  perspective: 1000px;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
-  position: relative;
-  background-color: #111;
-  font-family: "Montserrat";
-}
-
 .container2 {
-  min-width: 700px;
-  min-height: 350px;
-  border-radius: 20px;
   position: relative;
-  margin: 40px;
-  padding: auto;
+  width: 320px;
+  margin: 100px auto 0 auto;
+  perspective: 1000px;
 }
 
-.side {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  text-align: center;
+.carousel {
+  position: relative;
   width: 100%;
   height: 100%;
-  padding: 50px;
-  color: black;
-  border-radius: 20px;
+  transform-style: preserve-3d;
+  animation: rotate360 60s infinite forwards linear;
+  color: #fefefe;
+  background: lightgray;
 }
 
-.content2 {
-  transform: translatez(70px) scale(0.8);
-  padding-bottom: 4em;
-}
-
-.content2 h1 {
-  position: relative;
-  margin: auto;
-}
-
-.content2 p {
-  line-height: 2em;
-}
-
-/* GREY LINE */
-.content2 h1:before {
-  content: "";
+.carousel__face {
   position: absolute;
-  bottom: -30px;
-  height: 3px;
-  background-color: grey;
-  width: 70px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.front-1 {
-  z-index: 2;
-  background-size: 100vh;
+  width: 300px;
+  height: 187px;
+  top: 20px;
+  left: 10px;
+  right: 10px;
   background-size: cover;
-  background-color: pink;
-  /* background-image: url(./photos/pig-latin.png); */
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+  display: flex;
+  background-blend-mode: lighten;
 }
 
-.front-2 {
-  z-index: 2;
-  background-size: 100vh;
-  background-size: cover;
-  /* background-image: url(); */
-  background-color: gold;
+span {
+  margin: auto;
+  font-size: 2rem;
 }
 
-.front-3 {
-  z-index: 2;
-  background-size: 100vh;
-  background-size: cover;
-  /* background-image: url(); */
-  background-color: green;
+.carousel__face:nth-child(1) {
+  background-image: url(photos/pig-latin.png);
+  transform: rotateY(0deg) translateZ(430px);
 }
 
-.contactme {
-  text-align: center;
+.carousel__face:nth-child(2) {
+  background-image: url("https://images.pexels.com/photos/1258865/pexels-photo-1258865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(40deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(3) {
+  background-image: url("https://images.pexels.com/photos/808466/pexels-photo-808466.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(80deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(4) {
+  background-image: url("https://images.pexels.com/photos/1394841/pexels-photo-1394841.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(120deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(5) {
+  background-image: url("https://images.pexels.com/photos/969679/pexels-photo-969679.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(160deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(6) {
+  background-image: url("https://images.pexels.com/photos/1834400/pexels-photo-1834400.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(200deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(7) {
+  background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(240deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(8) {
+  background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(280deg) translateZ(430px);
+}
+
+.carousel__face:nth-child(9) {
+  background-image: url("https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  transform: rotateY(320deg) translateZ(430px);
+}
+
+@keyframes rotate360 {
+  from {
+    transform: rotateY(0deg);
+  }
+
+  to {
+    transform: rotateY(-360deg);
+  }
 }
 
 /* START OF CONTACT FORM */
