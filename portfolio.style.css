@@ -321,7 +321,7 @@ span {
 }
 
 .carousel__face:nth-child(2) {
-  background-image: url("https://images.pexels.com/photos/1258865/pexels-photo-1258865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url(photos/treasure-hunt.png);
   transform: rotateY(40deg) translateZ(430px);
 }
 
