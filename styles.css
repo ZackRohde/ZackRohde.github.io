@@ -86,6 +86,7 @@ button.fa.fa-3x.fa-angles-down {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  border-radius: 30px;
 }
 
 /* ABOUT ME STARTS */
@@ -158,7 +159,7 @@ body {
   top: 22px;
   width: 0;
   z-index: 1;
-  right: 30px;
+  right: 32px;
   border: medium solid white;
   border-width: 10px 0 10px 10px;
   border-color: transparent transparent transparent white;
@@ -172,7 +173,7 @@ body {
   top: 22px;
   width: 0;
   z-index: 1;
-  left: 30px;
+  left: 32px;
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
@@ -188,7 +189,7 @@ body {
   padding: 20px 30px;
   background-color: white;
   position: relative;
-  border-radius: 6px;
+  border-radius: 20px;
 }
 
 /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -204,6 +205,7 @@ body {
     width: 100%;
     padding-left: 70px;
     padding-right: 25px;
+
   }
 
   /* Make sure that all arrows are pointing leftwards */
